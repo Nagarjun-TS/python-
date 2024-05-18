@@ -1,7 +1,7 @@
 #IN THIS PROGRAM WE WILL UNDERSTAND THE MEANING OF SET AND DICTIONARY AND ITS USES
 #set are initialized with flower brackets they donot support indexing,slicing,repeatation using *3
 # we can perform remove and update option but if in case of frozen set this is also unavoidable
-s={1,2,3,4,15}
+s={1,2,3,4,4,15}
 s.update([0])
 s.remove(15)
 print(s)
@@ -18,6 +18,7 @@ for i in v:print(i)
 # using dictionary we will map student details where we use list
 students={'JOHN':['PYTHON','DJANGO','DRF'],'BOB':['JAVA','SPRING COURSE'],'JIM':['JS','NODE']}
 keys = students.keys()
+print(keys)
 for eachkeys in keys:
     print("courses taken by ",eachkeys,"are:")
     for eachcourse in students[eachkeys]:
